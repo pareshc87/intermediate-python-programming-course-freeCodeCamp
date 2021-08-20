@@ -58,3 +58,50 @@ print("list.sort() =", my_list1)
 
 # Sort list in memory
 print("sorted(<list_object>) =", sorted(my_list1))
+
+# Using arithmetic operators on lists
+# New list
+my_list2 = [4, 3, 1, -1, -5, 10]
+print("my_list2 =", my_list2)
+
+# Multiply list with a scalar
+my_list2 = [0] * 5
+print("my_list2 =", my_list2)
+
+# Add two lists
+my_list2 = [1, 2, 3, 4, 5]
+list3 = my_list1 + my_list2
+print("list3 =", my_list2)
+
+# Slicing lists - list[start:stop:step]
+my_list3 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+slice1 = my_list3[1:4]
+print("slice1 = ", slice1)
+
+slice2 = my_list3[2:9:2]
+print("slice2 =", slice2)
+
+slice3 = my_list3[::-1]
+print('slice3 =', slice3)
+
+# New list
+my_list4 = ['banana', 'cherry', 'apple']
+list_cpy = my_list4
+list_cpy.append('lemon')
+
+print('my_list4 =', my_list4)
+print('list_cpy =', list_cpy)
+
+# Copying list
+my_list4 = ['banana', 'cherry', 'apple']
+list_cpy = my_list4.copy()
+list_cpy.append('lemon')
+
+print('my_list4 =', my_list4)
+print('list_cpy =', list_cpy)
+
+# List comprehension
+my_list5 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+my_list5_squared = [num * num for num in my_list5]
+print('my_list5 =', my_list5)
+print('my_list5_squared =', my_list5_squared)
